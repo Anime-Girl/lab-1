@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[RENDER] Field – Snapshot test Matches the snapshot 1`] = `
+<div
+  class="button"
+  className="Field"
+>
+  Color:
+  <input
+    onChange={[Function]}
+  />
+  <button
+    onClick={[Function]}
+    type="submit"
+    value="Submit"
+  >
+    content
+  </button>
+</div>
+`;

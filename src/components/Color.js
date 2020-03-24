@@ -1,31 +1,24 @@
 import React from 'react';
 import Field from "./Field";
 import Square from "./Square";
-import hexToCMYK from './hextocmyk';
-import './App.css';
+import hexToCMYK from '../hextocmyk';
 
 class Color extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: '#FFFFF',
+            value: '',
             CMYK: '',
         }
-        //this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-
-    // handleChange(event) {
-    //    this.setState({ value: event.target.value });
-    // }
-
     handleSubmit(val) {
-        this.setState({ value: val });
-        this.setState({ CMYK: hexToCMYK(this.state.value) });
-        //alert(this.state.CMYK);
-        //document.getElementById('square').style.backgroundColor = this.state.value;
-        // document.getElementById('square').innerHTML = hexToCMYK(this.state.value);
-        //val.preventDefault();
+        this.setState(
+            {
+                value: val,
+                CMYK: hexToCMYK(val)
+            }
+        );
     }
     render() {
         return (

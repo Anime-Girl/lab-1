@@ -9,10 +9,17 @@ class Square extends React.Component {
             value: props.value
         };
     }
+    componentWillReceiveProps(newProps) {
+        this.setState({
+            value: newProps.value,
+            CMYK: newProps.CMYK
+        })
+    }
     render() {
         return (
             <div className="Square">
-                <div style={{ backgroundColor: this.state.value }} class="block" id={this.state.id}> {this.state.CMYK} </div>
+                <div type="text" class="rectangle" value='this.state.value' style={{ backgroundColor: this.state.value }} id={this.state.id}></div>
+                <h1>{this.state.CMYK}</h1>
             </div>
         )
     }

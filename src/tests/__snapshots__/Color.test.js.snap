@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[RENDER] Color – Snapshot test Matches the snapshot 1`] = `
+<div
+  className="Color"
+>
+  <div
+    class="button"
+    className="Field"
+  >
+    Color:
+    <input
+      id="field"
+      onChange={[Function]}
+      value=""
+    />
+    <button
+      onClick={[Function]}
+      type="submit"
+      value="Submit"
+    >
+      content
+    </button>
+  </div>
+  <div
+    className="Square"
+  >
+    <div
+      class="rectangle"
+      id="square"
+      style={
+        Object {
+          "backgroundColor": "",
+        }
+      }
+      type="text"
+      value="this.state.value"
+    />
+    <h1>
+      
+    </h1>
+  </div>
+</div>
+`;
