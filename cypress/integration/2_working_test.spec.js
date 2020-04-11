@@ -11,10 +11,6 @@ describe('Accepts input', () => {
         cy.get("input").type(input).should("have.value", input)
     })
 
-    it("Button clickable", () => {
-        cy.get("button").click()
-    })
-
     it("CMYK and rectangle color", () => {
         const input = '#123bb3'
         cy.get("input").type(input).should("have.value", input)
