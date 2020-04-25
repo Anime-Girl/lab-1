@@ -26,7 +26,7 @@ exports[`[RENDER] Color – Snapshot test Matches the snapshot 1`] = `
     className="Square"
   >
     <div
-      class="rectangle"
+      className="rectangle"
       id="square"
       style={
         Object {
