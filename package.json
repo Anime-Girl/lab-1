@@ -6,6 +6,8 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "html-webpack-plugin": "^4.2.0",
+    "lint-staged": "^10.1.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
@@ -13,6 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "./node_modules/.bin/webpack --mode=production",
+    "lint": "eslint  ./src/*.{js,jsx}",
     "test": "react-scripts test",
     "teste2e": "./node_modules/.bin/cypress run"
   },
@@ -48,5 +51,24 @@
     "react-test-renderer": "^16.13.1",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11"
+  },
+  "lint-staged": {
+    ".js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "statements": 100
+      }
+    }
   }
 }

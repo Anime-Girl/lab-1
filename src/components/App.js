@@ -3,10 +3,9 @@ import Color from './Color';
 
 function App() {
   return (
-    <div className="App" >
-      <Color></Color>
+    <div className="App">
+      <Color />
     </div>
-  )
+  );
 }
 export default App;
-
