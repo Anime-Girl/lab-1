@@ -1,9 +1,9 @@
-describe("Cypress", () => {
-    it("Working", () => {
-        expect(true).to.equal(true)
-    })
+describe('Cypress', () => {
+  it('Working', () => {
+    expect(true).to.equal(true);
+  });
 
-    it("App is ok", () => {
-        cy.visit('/')
-    })
-})
+  it('App is ok', () => {
+    cy.visit('/');
+  });
+});
