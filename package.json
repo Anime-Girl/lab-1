@@ -16,8 +16,9 @@
     "start": "node ./server.js",
     "build": "./node_modules/.bin/webpack --mode=production",
     "lint": "eslint  ./src/*.{js,jsx}",
-    "test": "react-scripts test",
-    "teste2e": "./node_modules/.bin/cypress run"
+    "test:unit": "react-scripts test",
+    "cy:open": "cypress open",
+    "test:e2e": "cypress run"
   },
   "eslintConfig": {
     "extends": "react-app"
