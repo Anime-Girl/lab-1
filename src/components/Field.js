@@ -22,8 +22,8 @@ class Field extends React.Component {
             <div class="button" className='Field' >
                 Color:
                 <input id={this.state.id} value={this.state.value} onChange={e => this.onChange(e.target.value)} />
-                <button onClick={this.onClick} type="submit" value="Submit">content</button>
-            </div>
+                <button id="ourbutton" onClick={this.onClick} type="submit" value="Submit">content</button>
+            </div >
         )
     }
 }
